@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.min.css?_v=20250109125607">
+
+
+    <link rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css?_v=20250109125607"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Marck+Script&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Old+Standard+TT:ital,wght@0,400;0,700;1,400&family=Pattaya&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Space+Grotesk:wght@300..700&family=Zen+Antique+Soft&display=swap&_v=20250109125607" rel="stylesheet">
+    <title>Главная</title>
+</head>
+
+
+<body>
+ 
+<main>
+    
+
+
+    <section class="page__prices prices">
+        <div class="prices__container">
+            <div class="prices__forms form-price">
+                <form class="form-price__body">
+                    <h2 class="form-price__title">Расчет стоимоти</h2>
+
+                    <div class="form__item">
+                        <div class="form__title">Итоговая сумма общей задолженности перед кредитными организациями в рублях:</div>
+                        <div class="options">
+                            <div class="options__item">
+                                <input id="formMin300" checked  type="radio" value="min300" name="totalamount" class="options__input" >
+                                <label for="formMin300" class="options__label" >Менее 300тыс. руб.</label>
+                            </div>
+                            <div class="options__item">
+                                <input id="form300k-500k"   type="radio" value="300k-500k" name="totalamount" class="options__input" >
+                                <label for="form300k-500k" class="options__label" >От 300 тыс. руб. - до 500 тыс. руб.</label>
+                            </div>
+                            <div class="options__item">
+                                <input id="form500k-1kk"   type="radio" value="500k-1kk" name="totalamount" class="options__input" >
+                                <label for="form500k-1kk" class="options__label" >От 500 тыс. руб. - до 1 млн. руб.</label>
+                            </div>
+                            <div class="options__item">
+                                <input id="form1kk+"  type="radio" value="1kk+" name="totalamount" class="options__input" >
+                                <label for="form1kk+" class="options__label" >Более 1 млн. руб.</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form__item">
+                        <div class="form__title">Есть ли просрочка по кредитам?</div>
+                        <div class="delay">
+                            <div class="delay__item">
+                                <input id="formYes" checked  type="radio" value="yes" name="delay" class="options__input" >
+                                <label for="formYes" class="options__label" >Да</label>
+                            </div>
+                            <div class="delay__item">
+                                <input id="formNo"   type="radio" value="no" name="delay" class="options__input" >
+                                <label for="formNo" class="options__label" >Нет</label>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form__item">
+                        <div class="form__label">Число кредитов (всего):</div>
+                        <input id="formNumber" type="number" name="Number" class="Number__input">
+                    </div>
+
+
+                    <div class="form__item">
+                        <div class="form__title">Есть ли у вас имущество?</div>
+                        <div class="property">
+                            <div class="property__item">
+                                <input id="formYes" checked  type="radio" value="yes" name="property" class="property__input" >
+                                <label for="formYes" class="options__label" >Да</label>
+                            </div>
+                            <div class="property__item">
+                                <input id="formNo"   type="radio" value="no" name="property" class="property__input" >
+                                <label for="formNo" class="property__label" >Нет</label>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="form__item">
+                        <div class="form__title">Общий официальный доход в месяц (зарплата, пенсия, иные доходы):</div>
+                        <div class="income">
+                            <div class="income__item">
+                                <input id="formMin10" checked  type="radio" value="min10" name="income" class="income__input" >
+                                <label for="formMin300" class="options__label" >Менее 10 тыс. руб.</label>
+                            </div>
+                            <div class="income__item">
+                                <input id="form10k-30k"   type="radio" value="300k-500k" name="totalamount" class="income__input" >
+                                <label for="form10k-30k" class="options__label" >От 10 тыс. руб. - до 30 тыс. руб.</label>
+                            </div>
+                            <div class="income__item">
+                                <input id="form30k-100"   type="radio" value="500k-1kk" name="totalamount" class="income__input" >
+                                <label for="form500k-100" class="options__label" >От 30 тыс. руб. до 100 тыс. руб.</label>
+                            </div>
+                            <div class="income__item">
+                                <input id="form100+"  type="radio" value="1kk+" name="totalamount" class="income__input" >
+                                <label for="form100+" class="income__label" >Более 100 тыс. руб.</label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form__item">
+                        <div class="form__title">Ваш Возраст</div>
+                        <div class="age">
+                            <div class="age__item">
+                                <input id="formYes" checked  type="radio" value="yes" name="age" class="age__input" >
+                                <label for="formYes" class="options__label" >Трудоспособный</label>
+                            </div>
+                            <div class="property__item">
+                                <input id="formNo"   type="radio" value="no" name="age" class="age__input" >
+                                <label for="formNo" class="age__label" >Пенсионер</label>
+                            </div>
+
+                        </div>
+                    </div>
+
+
+
+                    <div class="form__item">
+                        <label for="formRegion" class="form__label">Регион</label>
+                        <input id="formRegion" type="text" name="Region" class="form__input">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="formName" class="form__label">Имя*</label>
+                        <input id="formName" type="text" name="name" class="form__input">
+                    </div>
+
+                    <div class="form__item">
+                        <label for="formTel" class="form__label">Телефон*</label>
+                        <input id="formTel" type="tel" name="tel" class="form__input">
+                    </div>
+
+                    <button type="submit" class="form__button">Отправить</button>
+                </form>
+            </div>
+        </div>
+    </section>
+       
+</main>
+ <footer>
+	<div class="page__map map">
+		<div class="map__container">
+			<div class="map__item">
+				<script type="text/javascript" charset="utf-8" async
+					src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A38e51f19e96fa25f75332bb9c0aea6cc36e0ea07214f3aaeac087d4d4c95cd6c&amp;width=100%25&amp;height=400&amp;lang=ru_RU&amp;scroll=true&_v=20250109125607"></script>
+			</div>
+			<div class="map__body">
+				<div class="map__title">Наши контакты</div>
+				<div class="map__text">
+					<p><a
+							href="https://yandex.ru/maps/?um=constructor%3A38e51f19e96fa25f75332bb9c0aea6cc36e0ea07214f3aaeac087d4d4c95cd6c&source=constructorLink">г.Санкт-Петербург,
+							ул. Самойловой, д. 5, лит. С</a></p>
+					<p><a
+							href="https://yandex.ru/maps/?um=constructor%3A38e51f19e96fa25f75332bb9c0aea6cc36e0ea07214f3aaeac087d4d4c95cd6c&source=constructorLink ">г.
+							Челябинск, ул. Маркса, д. 54</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<section class="page__contacts">
+		<div class="contacts__container">
+			<div class="contacts__social social">
+				<a href='' class="social__tg">
+					<img src="img/soc/tg.png" alt="">
+				</a>
+				<a href='' class="social__wp"><img src="img/soc/wp.png" alt=""></a>
+				<a href='' class="social__vk"><img src="img/soc/vk.png" alt=""></a>
+			</div>
+		</div>
+
+	</section>
+</footer>  
+ <script src="js/app.min.js?_v=20250109125607"></script>
+
+</body>
+</html>
